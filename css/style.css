@@ -2,17 +2,17 @@
     --main-color: #d92123;
     --primary-text-color: #fff;
     --secondary-text-color: #191919;
-    --secondary-text-color: #868686;
+    --secondary-color: #868686;
     --tertiary-color: #eff3f4;
     --secondary-bg-color: #5c1011;
 }
 
-*{ 
-    font-family: "Lato";
+* {
+    font-family: "Lato", sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}   
+    box-sizing: border-box; /* Reseta as propriedades das páginas HTML */
+}
 
 a {
     text-decoration: none;
@@ -20,34 +20,41 @@ a {
 
 img {
     width: 100%;
-
 }
-/* id */
-#header{
+
+i {
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+/* Header */
+#header {
     min-height: 90vh;
     background-image: url("../images/main_banner4.png");
     background-size: cover;
     background-position: center;
     color: var(--primary-text-color);
-    margin-bottom: 2rem;
-
+    margin-bottom: 2rem; /* Espaço abaixo do header */
 }
-#inner-header{
-    /* padrão linha */
+
+/* Inner Header */
+#inner-header {
     display: flex;
-    /* alinhamento é horizontal, eixo X */
     justify-content: space-between;
-    /*alinhamento vertical, eixo y */
     align-items: center;
 }
 
+/* Brand */
 #brand {
     background-color: var(--main-color);
-    padding:  1rem;
+    padding: 1rem;
 }
 
+/* Navbar */
 #navbar {
-    display: flex; 
+    display: flex;
     gap: 2rem;
     text-transform: uppercase;
     margin-right: 2rem;
@@ -57,4 +64,133 @@ img {
     color: var(--primary-text-color);
     font-weight: bold;
     padding: 1rem;
+}
+
+/* Banner */
+.banner {
+    max-width: 45%;
+    opacity: 0;
+    padding: 4rem;
+    position: absolute;
+}
+
+.banner.active {
+    opacity: 1; /* Banner ativo */
+}
+
+.banner h2 {
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 2; /* Controla a profundidade */
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+/* Square (Quadrado ao lado do título principal) */
+.square {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: 1;
+}
+
+/* Dots (Indicadores) */
+.dots {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 3rem;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dot.active {
+    background-color: var(--secondary-bg-color);
+}
+
+/* Outros serviços */
+#other-services {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service {
+    position: relative;
+}
+
+.service i {
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.service-info {
+    background-color: var(--tertiary-color);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+}
+
+.service h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-wrap: wrap; /* Flex wrap para permitir quebra de linha */
+    align-items: center;
+    gap: 2rem;
+}
+
+#about-text {
+    background-image: url("../images/pattern.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    display: flex;
+    flex: 1 1 0; 
+    /*flex-grow: 1; */
+    /* Controla a capacidade de um item de crescer para preencher o espaço extra */
+    /* Se todos os itens têm o mesmo valor, o espaço extra é dividido igualmente entre eles */
+  
+    /* flex-shrink: 1; */
+    /* Controla a capacidade de um item encolher quando o espaço disponível é menor */
+    /* Um valor maior faz o item encolher mais rápido, e o valor 0 impede o encolhimento */
+  
+    /* flex-basis: 100px; */
+    /* Define o tamanho inicial do item antes de distribuir o espaço extra ou encolher */
+    /* Esse valor é como um "tamanho base" para o item antes do flex-grow ou flex-shrink entrarem em ação * */
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+#about-text .section-subtitle,
+#about-text .section-title {
+    color: var(--primary-text-color);
+}
+
+#about-text i {
+    background-color: transparent;
+}
+
+.about-description {
+    display: flex;
 }
