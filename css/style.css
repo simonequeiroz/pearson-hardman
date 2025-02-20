@@ -1,151 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Person Hardman</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
-    <!-- Cabeçalho e Banner -->
-    <header id="header">
-        <div id="inner-header">
-            <h2 id="brand">Pearson Hardman</h2>
-            <nav id="navbar">
-                <a href="#header">Início</a>
-                <a href="#expertise-areas">Serviços</a>
-                <a href="#about">Sobre</a>
-                <a href="#team">Time</a>
-                <a href="#contact">Contato</a>
+:root {
+    --main-color: #d92123;
+    --primary-text-color: #fff;
+    --secondary-text-color: #191919;
+    --secondary-color: #868686;
+    --tertiary-color: #eff3f4;
+    --secondary-bg-color: #5c1011;
+
+}
 
 
-            </nav>
-        </div>
-        <div class="banner active">
-            <!-- no span o square = quadrado -->
-            <span class="square"></span>
-            <h2>Melhores experts em direito do país</h2>
-            <p>Os Advogados mais qualificados estão aqui, agende uma reunião e conheça nosso time</p>
-        </div>
-        <div class="banner">
-            <!-- no span o square = quadrado -->
-            <span class="square"></span>
-            <h2>Advogados</h2>
-            <p>Melhores experts em direito do país</p>
-        </div>
-        <div class="dots">
-            <!-- para criar uma div com atalho 'div.dot' , depois para copiar a linha SHIFT + ALT + seta para baixo -->
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+* {                          /* reset para zerar as propriedades das paginas html */    
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    /**/   /* borda da caixa */    
+}
 
-        </div>
-    </header>
-    <!-- Aréas de Atuação -->
-     <!-- div#expertise-areas.text-image-section -->
-     <main id="expertise-areas" class="text-image-section">
-        <!-- div#expertise-image-container.image-container -->
-        <div id="expertise-information" class="text-container">
+a {
+    text-decoration: none;
+}
 
-        </div>
-        <div id="expertise-image-container" class="image-container"></div>
-        <!-- div#other-services -->
-        <div id="other-services">
-            <!-- div.service -->
-             <div class="service">
-                <img src="images/bank.jpg" alt="Banco">
-                <!-- i.bi.bi-bank -->
-                <i class="bi bi-bank"></i>
-                <!-- div.service-info -->
-                <div class="service-info">
-                    <h4>Bancos e finanças pessoais</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos eveniet nesciunt quasi omnis perferendis totam odit illo numquam facilis pariatur iure, ducimus iusto ex minus officiis, nisi porro quis cum.</p>
-                </div>
-             </div>
-             <div class="service">
-                <img src="images/construction.jpg" alt="Construção">
-                <!-- i.bi.bi-bank -->
-                <i class="bi bi-bricks"></i>
-                <!-- div.service-info -->
-                <div class="service-info">
-                    <h4>Construção de imóveis sem escritura</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos eveniet nesciunt quasi omnis perferendis totam odit illo numquam facilis pariatur iure, ducimus iusto ex minus officiis, nisi porro quis cum.</p>
-                </div>
-             </div>
-             <div class="service">
-                <img src="images/company.jpg" alt="Empresa">
-                <!-- i.bi.bi-bank -->
-                <i class="bi bi-building"></i>
-                <!-- div.service-info -->
-                <div class="service-info">
-                    <h4>Empresas e funcionários</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos eveniet nesciunt quasi omnis perferendis totam odit illo numquam facilis pariatur iure, ducimus iusto ex minus officiis, nisi porro quis cum.</p>
-                </div>
-             </div>
+img {
+    width: 100%;
 
-        </div>
+}
 
+i {
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    padding: 1rem;
+}
 
-     </main>
-     <!-- Sobre Nós -->
-     <section id ="about">
-        <div id="about-text">
-            <p class="section-subtitle">Sobre nós</p>
-            <h3 class="section-title">
-                Uma empresa que tem o foco no cliente, aconselhando da melhor forma e conseguindo os melhores resultados
-            </h3>
-            <div class="about-description">
-                <i class="bi bi-briefcase"></i>
-                <div>
-                    <h4>Advogados atualizados</h4>
-                    <p>Nós promovemos treinamentos mensais a todos os nosso colaboradores</p>
-                </div>
-            </div>
-            <div class="about-description">
-                <i class="bi bi-book"></i>
-                <div>
-                    <h4>Domínio das leis</h4>
-                    <p>Nossos colaboradores são especializados em várias áreas do Direito, dominando as principais leis em suas especialidades</p>
-                </div>
-            </div>
-        </div>
-        <div id="about-data">
-        </div>
-        </div>
-        <div id="about-data">
-            <div class="data">
-                <i class="bi bi-person"></i>
-                <p class="number">50</p>
-                <p class="text">Advogados</p>
-            </div>
-            <div class="data">
-                <i class="bi bi-check-all"></i>
-                <p class="number">789</p>
-                <p class="text">Casos resolvidos</p>
-            </div>
-            <div class="data">
-                <i class="bi bi-building"></i>
-                <p class="number">40</p>
-                <p class="text">Clientes</p>
-            </div>
-            <div class="data">
-                <i class="bi bi-trophy"></i>
-                <p class="number">7</p>
-                <p class="text">Prêmios empresariais</p>
-            </div>
+/* id */
+#header{
+    /* tamanho 90% do espaço */
+    min-height: 90vh;
+    background-image: url("../images/main_banner4.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    /* REM e  EM  são 16pixel, o em sozinho = tamanho da fonte tag pai,  rem é r de root, ref a tag body */
+    margin-bottom: 2rem;   
 
+}
 
-        </div>
+ 
+ #inner-header{
+    /* padrão linha */
+    display: flex;
+    /* alinhamento é horizontal, eixo x */
+    justify-content: space-between;
+    /* alinhamento vertical eixo y */
+    align-items: center;
+ }
 
+ #brand{
+    background-color: var(--main-color);
+    padding: 1rem;
+ }
 
-     </section>
-     
+ #navbar{
+    display: flex;
+    /* espaçamento do display flex */
+    gap: 2rem;
+    /* transformar todo o texto em MAIUSCULO */
+    text-transform: uppercase;
+    /* margem do lado direito 2rem (2 vexes 16 pixel ou o em definido no root) */
+    margin-right: 2rem;
+ }
 
-</body>
-</html>
+ /* esse "a" so vai ser estilizado quando estiver dentro dos links da navbar */
+ #navbar a {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    padding: 1rem;
+ }
+
+ /* banner slogan de propaganda  */
+ .banner.active{ 
+    /* banner ativo é mostrado */
+    opacity: 1; 
+    
+ }
+ .banner{
+    /* limite da caixa 50% da margem */
+    max-width: 45%;
+    opacity: 0;
+    padding: 4rem;
+    position: absolute;
+ }
+ 
+ .banner h2{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    /* position relative é relativo a caixa. */
+    position: relative;
+    /* o z-index define o eixo "z" de profundidade 3d na frente ou atrás */
+    z-index: 2;
+ }
+
+ .banner p{
+    font-size: 1.5rem;
+ }
+ /* fazer o design do quadrado logo abaixo do titulo principal Pearson Hardman */
+.square{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    /* RELATIVE - sempre em relação a caixa 
+       ABSOLUTE - é em relação a um elemento especifico dentro da caixa */
+    /* relativo a caixa , o position absolute no square faz com que o conteudo do banner adentre o square */
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index:1;
+}
+
+.dots{
+    display:flex;
+    gap: 2rem;
+    /*position absolute em relação a header, pelo position absolute consegue mexer com as 4 posições cima, baixa, esquerda, direita */
+    position: absolute;
+    bottom: 9rem;
+    left: 3rem;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dot.active{
+    background-color: var(--secondary-bg-color);
+}
+
+#other-services{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.service{
+    position: relative;
+}
+
+.service i{
+    position: absolute;
+    left: 0;
+    top:  0px;
+}
+
+.service-info{
+    background-color: var(--tertiary-color);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+}
+
+.service h4{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Section about - Sobre nós */
+#about{
+    display: flex;   /* display flex, alinha as caixas lado a lado*/
+    flex-wrap: wrap;  /*  flex wrap: se alguma coisa não couber, ele joga pra baixo */
+    align-items: center;
+    gap: 2rem;
+}
+#about-text{
+    background-image: url("../images/pattern.png");
+    background-size: cover;  /* cover vai preencher a imagem*/
+    background-position: center;  /* centraliza a imagem de fundo bem no centro*/
+    color: var(--primary-text-color);  /* deixar o texto da box na cor branca*/
+    display: flex;
+    flex: 1 1 0; 
+    /* flex: grow shrink basis */
+    /* grow - define quanto o elemento cresce em relação aos outros */
+    /* shrink - define quando ele encolhe quando não há espaço */
+    /* basis -  define o tamanho inicial do elemento antes de aplicar o crescimento e encolhimento */
+    flex-direction: column; /* vai usar o flex horizontal, no entanto vai flexionar em coluna na vertical*/
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem; /* padding com duas informações, represente up 4 e down 3 */
+}
+
+#about-text .section-subtitle,
+#about-text .section-title{
+    color: var(--primary-text-color)    
+}
+
+#about-text i {
+    background-color: transparent;
+}
+
+.about-description{
+    display: flex;
+}
