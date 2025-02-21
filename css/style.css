@@ -292,3 +292,19 @@ i {
 .author .author-job{
     color: var(--secondary-text-color);
 }
+#team {
+    text-align: center;
+  }
+  
+  .employees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .employee {
+    text-align: center;
+    flex: 1;
+  }
+  
