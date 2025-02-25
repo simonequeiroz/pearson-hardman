@@ -63,7 +63,7 @@ i {
 #navbar a {
     color: var(--primary-text-color);
     font-weight: bold;
-    padding: 1rem;
+    padding: 1.4rem;
 }
 
 .banner.active{
@@ -294,17 +294,44 @@ i {
 }
 #team {
     text-align: center;
-  }
-  
-  .employees {
+}
+.container {
+    text-align: center; /* Centraliza o conteúdo */
+    width: 100%; /* Garante que ocupa a largura total */
+}
+
+h2 {
+    font-size: 45px; /* Ajuste conforme necessário */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    line-height: 1.rem; /* Espaçamento adequado entre linhas */
+}
+
+.red-text {
+    color: var(--main-color); /* Mantém o nome em vermelho */
+    font-weight: bold; /* Deixa o texto mais forte */
+}
+
+.employee-name {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.employee-role {
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.employees {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-  }
+    gap: 30px;
+}
   
-  .employee {
+.employee {
     text-align: center;
     flex: 1;
-  }
+}
   
