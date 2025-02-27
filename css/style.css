@@ -164,23 +164,19 @@ i {
     gap:2rem;
     padding: 2rem;
 }
-
 .service{
     position: relative;
 }
-
 .service i{
     position: absolute;
     left:0;
     top:0;
 }
-
 .service-info{
     background-color: var(--tertiary-color);
     padding: 2rem 1.4rem;
     min-height: 250px;
 }
-
 .service h4{
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -209,7 +205,6 @@ i {
     justify-content: center;
     gap: 2rem;
     padding: 4rem 3rem;
-
 }
 #about-text .section-subtitle,
 #about-text .section-title{
@@ -218,24 +213,20 @@ i {
 #about-text i {
     background-color: transparent;
 }
-
 .about-description{
     display: flex;
     align-items: center;
 }
-
 .about-description h4 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
-
 #about-data{
     display: flex;
     flex: 1 1 0;
     flex-wrap: wrap;
     padding: 2rem;
 }
-
 #about-data .data{
     width: 50%;
     display: flex;
@@ -246,7 +237,6 @@ i {
     margin-top: -1px;
     margin-left: -1px;
 }
-
 #about-data .data:first-child{
     border-right: 1px solid var(--secondary-text-color);
     border-bottom: 1px solid var(--secondary-text-color);
@@ -255,7 +245,6 @@ i {
     border-left: 1px solid var(--secondary-text-color);
     border-top: 1px solid var(--secondary-text-color);
 }
-
 #about-data .data i{
     background-color: transparent;
     color: var(--main-color);
@@ -269,7 +258,6 @@ i {
 .data .text {
     text-transform: uppercase;
 }
-
 /*Depoimentos */
 #testimonial {
     display: flex;
@@ -292,25 +280,22 @@ i {
 .author .author-job{
     color: var(--secondary-text-color);
 }
-#team {
+#team.square {
     text-align: center;
 }
 .container {
     text-align: center; /* Centraliza o conteúdo */
     width: 100%; /* Garante que ocupa a largura total */
 }
-
 h2 {
     font-size: 45px; /* Ajuste conforme necessário */
     font-weight: bold; /* Deixa o texto mais destacado */
     line-height: 1.rem; /* Espaçamento adequado entre linhas */
 }
-
 .red-text {
     color: var(--main-color); /* Mantém o nome em vermelho */
     font-weight: bold; /* Deixa o texto mais forte */
 }
-
 .employee-name {
     color: var(--main-color);
     text-transform: uppercase;
@@ -329,9 +314,61 @@ h2 {
     align-items: center;
     gap: 30px;
 }
-  
 .employee {
     text-align: center;
     flex: 1;
 }
-  
+/*** Contato ***/
+
+#contact {
+    background-color: var(--main-color);
+    gap:0;
+    padding-bottom: 5rem;
+}
+#contact-information {
+    position: relative;
+    text-align: left;
+    padding: 3rem;
+    flex: 1 1 0;
+}
+#contact-information  .section-subtitle{
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+
+}
+#contact-information i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-text-color);
+    color: var(--main-color);
+    font-size: 2.5;
+    padding: 2rem;
+
+}
+#contact-information form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#contact-information .form-control {
+    display: flex;
+    gap: 1rem;
+}
+#contact-information input,
+ #contact-information textarea {
+    padding: 1rem;
+    border: none;
+    flex: 0.5;
+}
+#contact-information .btn {
+    align-self: start;
+    border: 2px solid var(--primary-text-color);    
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+#contact-information .btn:hover {
+    background-color: var(--primary-text-color);
+    color: var(--main-color);
+}
