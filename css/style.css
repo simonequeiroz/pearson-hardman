@@ -501,7 +501,7 @@ h2 {
 body {
     /* esconder o scrool lateral se sobrar  a direita */
     overflow-x: hidden;
-} 
+
 }
 i {
     padding: 1.5rem;
@@ -583,4 +583,7 @@ flex-wrap: wrap;
   }
   #contact-information .btn{
     align-self: auto;
+
   }
+
+}
