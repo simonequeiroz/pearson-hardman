@@ -585,5 +585,29 @@ flex-wrap: wrap;
     align-self: auto;
 
   }
+  /* rodape - footer */
+  #footer{
+    flex-wrap: wrap;
+  }
 
+  .contact-info,
+  .links-container{
+    width: 100%;
+  }
+#footer i{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.footer-brand{
+    text-align: center;
+}
+#networks{
+    margin-bottom: 3rem;
+}
+.links-container{
+    margin-bottom: 1rem;
+}
+.links-container h4{
+    margin-bottom: 1.5rem;
+}
 }
