@@ -8,7 +8,6 @@
 }
 
 
-
 * {
     font-family: "Lato";
     padding: 0;
@@ -603,13 +602,14 @@ flex-wrap: wrap;
 .footer-brand{
     text-align: center;
 }
-#networks{
+.networks{
     margin-bottom: 3rem;
 }
 .links-container{
     margin-bottom: 1rem;
 }
 .links-container h4{
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+   
 }
 }
