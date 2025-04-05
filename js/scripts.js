@@ -32,8 +32,25 @@ function showSlides() {
 
     setTimeout(showSlides, 3000)
 }
+// Adicione no HTML: <button class="prev">❮</button> <button class="next">❯</button>
+document.querySelector(".prev")?.addEventListener("click", () => {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  updateSlides();
+});
 
+document.querySelector(".next")?.addEventListener("click", () => {
+  slideIndex = (slideIndex + 1) % slides.length;
+  updateSlides();
+});
 
+function updateSlides() {
+  // Mesma lógica de ativação do showSlides()
+}
+const slider = document.querySelector(".slides-container");
+slider?.addEventListener("mouseenter", () => clearTimeout(slideTimeout));
+slider?.addEventListener("mouseleave", () => {
+  slideTimeout = setTimeout(showSlides, 3000);
+});
 //Ativar menu-Mobile
 // arrow function
 // () => {
